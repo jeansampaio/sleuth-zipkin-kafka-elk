@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <!--<include resource="org/springframework/boot/logging/logback/file-appender.xml"/> -->
+
+    <springProperty scope="context" name="application_name" source="spring.application.name"/>
+    <springProperty scope="context" name="server-host" source="logstash.server.host"/>
+    <springProperty scope="context" name="server-port" source="logstash.server.port"/>
+    <springProperty scope="context" name="environment" source="spring.profiles.active"/>
+    <springProperty scope="context" name="path-name" source="logging.file.path"/>
+    <springProperty scope="context" name="log-name" source="logging.name"/>
+
+    <!--<property name="PRO_HOME" value="/logs/" />
+        <property name="USER_HOME" value="jean" /> -->
+
+    <!--<springProfile name="default">
+        <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    </springProfile>-->
+
+    <appender name="FILE-ROOLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${path-name}/${log-name}.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${path-name}/${log-name}.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <remoteHost>localhost</remoteHost>
+        <port>5000</port>
+
+        <connectionStrategy>
+            <roundRobin>
+                <connectionTTL>5 minutes</connectionTTL>
+            </roundRobin>
+        </connectionStrategy>
+
+        <!-- keep alive -->
+        <keepAliveDuration>5 minutes</keepAliveDuration>
+        <!-- Connection failed to retry -->
+        <reconnectionDelay>1 second</reconnectionDelay>
+        <!-- write buffer -->
+        <writeBufferSize>16384</writeBufferSize>
+
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <timeZone>UTC</timeZone>
+                </timestamp>
+                <version/>
+                <logLevel/>
+                <message/>
+                <loggerName/>
+                <threadName/>
+                <context/>
+                <pattern>
+                    <omitEmptyFields>true</omitEmptyFields>
+                    <pattern>
+                        {
+                            "trace": {
+                                "trace_id": "%mdc{X-B3-TraceId}",
+                                "span_id": "%mdc{X-B3-SpanId}",
+                                "parent_span_id": "%mdc{X-B3-ParentSpanId}",
+                                "exportable": "%mdc{X-Span-Export}"
+                            }
+                        }
+                    </pattern>
+                </pattern>
+                <mdc>
+                    <excludeMdcKeyName>logstash-server</excludeMdcKeyName>
+                    <excludeMdcKeyName>logstash-port</excludeMdcKeyName>
+                    <excludeMdcKeyName>path-name</excludeMdcKeyName>
+                    <excludeMdcKeyName>log-name</excludeMdcKeyName>
+                    <excludeMdcKeyName>spanExportable</excludeMdcKeyName>
+                    <excludeMdcKeyName>X-B3-TraceId</excludeMdcKeyName>
+                    <excludeMdcKeyName>X-B3-SpanId</excludeMdcKeyName>
+                    <excludeMdcKeyName>X-B3-ParentSpanId</excludeMdcKeyName>
+                    <excludeMdcKeyName>X-Span-Export</excludeMdcKeyName>
+                </mdc>
+
+                <stackTrace>
+                    <!-- <fieldName>stacktrace</fieldName> -->
+                    <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+                        <!-- <maxDepthPerThrowable>10030</maxDepthPerThrowable>
+                        <maxLength>104096</maxLength>
+                        <shortenedClassNameLength>20</shortenedClassNameLength> -->
+                        <rootCauseFirst>true</rootCauseFirst>
+                    </throwableConverter>
+                </stackTrace>
+            </providers>
+        </encoder>
+
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="LOGSTASH"/>
+        <appender-ref ref="FILE-ROOLING"/>
+    </root>
+
+</configuration>

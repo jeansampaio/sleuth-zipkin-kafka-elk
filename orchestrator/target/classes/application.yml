@@ -1,0 +1,27 @@
+# Server port
+server:
+  port: 8027
+
+# Spring Application Details
+spring:
+  application:
+    name: orchestrator
+  # Zipkin info
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1
+# Service URL's
+order:
+  service:
+    url: http://localhost:8081/orders/
+
+customer:
+  service:
+    url: http://localhost:8082/customers/
+
+destination:
+  host: localhost
+  port: 5044
+

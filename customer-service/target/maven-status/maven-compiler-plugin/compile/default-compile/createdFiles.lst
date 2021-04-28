@@ -1,0 +1,13 @@
+com\wysoft\customer\mw\integration\eventbus\service\PublishEventService.class
+com\wysoft\customer\mw\restservices\model\CustomerDTO.class
+com\wysoft\customer\mw\restservices\controller\BookController.class
+com\wysoft\customer\mw\integration\model\Book.class
+com\wysoft\customer\mw\restservices\controller\CustomerController.class
+com\wysoft\customer\mw\restservices\service\impl\CustomerServiceImpl.class
+com\wysoft\customer\mw\restservices\service\CustomerService.class
+com\wysoft\customer\CustomerServiceApplication.class
+com\wysoft\customer\mw\restservices\model\CustomerMapper.class
+com\wysoft\customer\mw\restservices\dao\CustomerRepository.class
+com\wysoft\customer\mw\integration\eventbus\service\impl\PublishEventServiceImpl.class
+com\wysoft\customer\mw\restservices\model\CustomerMapperImpl.class
+com\wysoft\customer\mw\restservices\dao\entities\CustomerEntity.class

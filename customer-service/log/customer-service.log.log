@@ -1,0 +1,306 @@
+2021-04-23_16:30:12.508 [restartedMain] INFO  c.w.c.CustomerServiceApplication - The following profiles are active: default
+2021-04-23_16:30:18.633 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-23_16:30:19.894 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1131ms. Found 1 JPA repository interfaces.
+2021-04-23_16:30:21.841 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=53bfe8bd-dba2-3a78-b8ed-a75168581955
+2021-04-23_16:30:22.212 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-04-23_16:30:22.227 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-04-23_16:30:22.246 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-04-23_16:30:23.290 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23_16:30:23.308 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23_16:30:23.417 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23_16:30:25.867 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-04-23_16:30:25.889 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-23_16:30:25.891 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-04-23_16:30:26.378 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-23_16:30:26.379 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13840 ms
+2021-04-23_16:30:27.512 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer-servicedb'
+2021-04-23_16:30:29.372 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23_16:30:29.628 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-04-23_16:30:29.777 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-23_16:30:29.919 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-04-23_16:30:30.292 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-23_16:30:30.626 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-23_16:30:30.800 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-23_16:30:32.746 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-23_16:30:32.772 [restartedMain] INFO  o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar - Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2021-04-23_16:30:32.783 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-23_16:30:32.849 [task-2] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2021-04-23_16:30:36.090 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-04-23_16:30:36.512 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'application-1.input' has 1 subscriber(s).
+2021-04-23_16:30:36.547 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-23_16:30:36.548 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 1 subscriber(s).
+2021-04-23_16:30:36.548 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2021-04-23_16:30:36.552 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: ktable
+2021-04-23_16:30:37.339 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-23_16:30:37.787 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-23_16:30:37.928 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: ktable
+2021-04-23_16:30:37.928 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: ktable
+2021-04-23_16:30:37.930 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kafka
+2021-04-23_16:30:38.759 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-23_16:30:38.759 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-23_16:30:38.763 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kafka
+2021-04-23_16:30:38.763 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+2021-04-23_16:30:38.763 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kstream
+2021-04-23_16:30:39.430 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-23_16:30:39.430 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-23_16:30:39.433 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kstream
+2021-04-23_16:30:39.433 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kstream
+2021-04-23_16:30:39.434 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: globalktable
+2021-04-23_16:30:40.158 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-23_16:30:40.161 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-23_16:30:40.174 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: globalktable
+2021-04-23_16:30:40.174 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: globalktable
+2021-04-23_16:30:40.175 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+2021-04-23_16:30:40.427 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-23_16:30:40.571 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-23_16:30:40.573 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-23_16:30:40.575 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619206240566
+2021-04-23_16:30:41.042 [restartedMain] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-04-23_16:30:41.095 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-23_16:30:41.095 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-23_16:30:41.096 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619206241095
+2021-04-23_16:30:41.135 [restartedMain] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-1, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Cluster ID: sw4FUtoyRjajU8qYdH67hQ
+2021-04-23_16:30:41.188 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d.errors' has 1 subscriber(s).
+2021-04-23_16:30:41.188 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d.errors' has 0 subscriber(s).
+2021-04-23_16:30:41.189 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d.errors' has 1 subscriber(s).
+2021-04-23_16:30:41.189 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d.errors' has 2 subscriber(s).
+2021-04-23_16:30:41.207 [restartedMain] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-04-23_16:30:41.230 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-23_16:30:41.231 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-23_16:30:41.232 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619206241230
+2021-04-23_16:30:41.259 [restartedMain] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Subscribed to topic(s): channel-stream
+2021-04-23_16:30:41.268 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-04-23_16:30:41.286 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@2a8b6520
+2021-04-23_16:30:41.346 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Cluster ID: sw4FUtoyRjajU8qYdH67hQ
+2021-04-23_16:30:41.356 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-04-23_16:30:41.362 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] (Re-)joining group
+2021-04-23_16:30:41.375 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-23_16:30:41.418 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2021-04-23_16:30:41.419 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] (Re-)joining group
+2021-04-23_16:30:41.986 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-23_16:30:41.988 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-23_16:30:42.061 [restartedMain] INFO  c.w.c.CustomerServiceApplication - Started CustomerServiceApplication in 33.376 seconds (JVM running for 36.466)
+2021-04-23_16:30:44.430 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Finished assignment for group at generation 1: {consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2-2db77131-c9e1-429f-8b86-e1b127a14f2f=Assignment(partitions=[channel-stream-0])}
+2021-04-23_16:30:44.442 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Successfully joined group with generation 1
+2021-04-23_16:30:44.447 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Adding newly assigned partitions: channel-stream-0
+2021-04-23_16:30:44.456 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Found no committed offset for partition channel-stream-0
+2021-04-23_16:30:44.465 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Found no committed offset for partition channel-stream-0
+2021-04-23_16:30:44.486 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Resetting offset for partition channel-stream-0 to offset 3.
+2021-04-23_16:30:44.497 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$1 - anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d: partitions assigned: [channel-stream-0]
+2021-04-23_18:19:22.492 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.i.e.s.i.ConsumerEventServiceImpl - Consume payload : com.wysoft.customer.mw.integration.model.Book@3dea414b
+2021-04-23_18:19:22.568 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.r.s.impl.CustomerServiceImpl - Book => com.wysoft.customer.mw.integration.model.Book@3dea414b
+2021-04-23_19:01:09.922 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.i.e.s.i.ConsumerEventServiceImpl - Consume payload : com.wysoft.customer.mw.integration.model.Book@1856805
+2021-04-23_19:01:09.963 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.r.s.impl.CustomerServiceImpl - Book => com.wysoft.customer.mw.integration.model.Book@1856805
+2021-04-23_21:15:27.460 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.i.e.s.i.ConsumerEventServiceImpl - Consume payload : com.wysoft.customer.mw.integration.model.Book@32ab4429
+2021-04-23_21:15:27.588 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.r.s.impl.CustomerServiceImpl - Book => com.wysoft.customer.mw.integration.model.Book@32ab4429
+2021-04-23_21:17:36.259 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.i.e.s.i.ConsumerEventServiceImpl - Consume payload : com.wysoft.customer.mw.integration.model.Book@422ad239
+2021-04-23_21:17:36.295 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  c.w.c.m.r.s.impl.CustomerServiceImpl - Book => com.wysoft.customer.mw.integration.model.Book@422ad239
+2021-04-23_22:13:58.962 [kafka-coordinator-heartbeat-thread | anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid, will attempt rediscovery
+2021-04-23_22:14:00.866 [kafka-coordinator-heartbeat-thread | anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-04-23_22:14:00.875 [kafka-coordinator-heartbeat-thread | anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Member consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2-2db77131-c9e1-429f-8b86-e1b127a14f2f sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to consumer poll timeout has expired. This means the time between subsequent calls to poll() was longer than the configured max.poll.interval.ms, which typically implies that the poll loop is spending too much time processing messages. You can address this either by increasing max.poll.interval.ms or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2021-04-23_22:14:01.487 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Error sending fetch request (sessionId=203023167, epoch=39490) to node 1: {}.
+org.apache.kafka.common.errors.DisconnectException: null
+2021-04-23_22:14:01.516 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2021-04-23_22:14:01.519 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Lost previously assigned partitions channel-stream-0
+2021-04-23_22:14:01.700 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$1 - anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d: partitions lost: [channel-stream-0]
+2021-04-23_22:14:01.709 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$1 - anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d: partitions revoked: [channel-stream-0]
+2021-04-23_22:14:01.729 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] (Re-)joining group
+2021-04-23_22:14:02.107 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] ERROR o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] LeaveGroup request failed with error: The coordinator is not aware of this member.
+2021-04-23_22:14:02.278 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2021-04-23_22:14:02.278 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] (Re-)joining group
+2021-04-23_22:14:05.590 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Finished assignment for group at generation 3: {consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2-ddf39deb-7b7d-4755-8a86-c36112e9c56c=Assignment(partitions=[channel-stream-0])}
+2021-04-23_22:14:05.598 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Successfully joined group with generation 3
+2021-04-23_22:14:05.603 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Adding newly assigned partitions: channel-stream-0
+2021-04-23_22:14:05.645 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d-2, groupId=anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d] Setting offset for partition channel-stream-0 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2021-04-23_22:14:05.646 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$1 - anonymous.d4602bd7-b719-4601-b61f-6214763f8f4d: partitions assigned: [channel-stream-0]

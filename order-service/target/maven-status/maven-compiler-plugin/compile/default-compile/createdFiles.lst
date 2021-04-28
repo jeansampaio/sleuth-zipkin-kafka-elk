@@ -1,0 +1,12 @@
+com\wysoft\order\OrderServiceApplication.class
+com\wysoft\order\mw\integration\eventbus\service\ConsumerEventService.class
+com\wysoft\order\mw\restservices\model\OrderMapper.class
+com\wysoft\order\mw\restservices\model\OrderDTO.class
+com\wysoft\order\mw\restservices\model\OrderMapperImpl.class
+com\wysoft\order\mw\restservices\dao\entities\OrderEntity.class
+com\wysoft\order\mw\restservices\service\OrderService.class
+com\wysoft\order\mw\restservices\service\impl\ConsumerEventServiceImpl.class
+com\wysoft\order\mw\restservices\controller\OrderController.class
+com\wysoft\order\mw\restservices\dao\OrderRepository.class
+com\wysoft\order\mw\restservices\service\impl\OrderServiceImpl.class
+com\wysoft\order\mw\integration\eventbus\model\Book.class

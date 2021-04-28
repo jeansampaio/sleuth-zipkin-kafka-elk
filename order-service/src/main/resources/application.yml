@@ -1,0 +1,44 @@
+# Server Port
+server:
+  port: 8081
+
+# Spring Application Details
+spring:
+  application:
+    name: order-service
+  # Spring cloud streams
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: channel-stream
+  # Enabling H2 Console
+  h2:
+    console:
+      enabled: true
+  # H2 DataBase details
+  datasource:
+    url: 'jdbc:h2:mem:${spring.application.name}db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE'
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  # Zipkin info
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1
+logstash:
+  server:
+    host: localhost
+    port: 5000
+# Logging info
+logging:
+  file:
+    path: ./log
+  #name: ${spring.application.name}.log
+  level:
+    com:
+      wysoft: DEBUG

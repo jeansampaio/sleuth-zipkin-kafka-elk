@@ -1,0 +1,1417 @@
+2021-04-26_19:33:58.375 [restartedMain] INFO  c.w.c.CustomerServiceApplication - The following profiles are active: default
+2021-04-26_19:34:09.103 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-26_19:34:09.503 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 353ms. Found 1 JPA repository interfaces.
+2021-04-26_19:34:11.156 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=53bfe8bd-dba2-3a78-b8ed-a75168581955
+2021-04-26_19:34:11.602 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-04-26_19:34:11.644 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-04-26_19:34:11.672 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-04-26_19:34:12.755 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26_19:34:12.771 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26_19:34:12.898 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26_19:34:15.984 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-04-26_19:34:16.013 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-26_19:34:16.014 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-04-26_19:34:16.716 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-26_19:34:16.717 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18250 ms
+2021-04-26_19:34:17.796 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer-servicedb'
+2021-04-26_19:34:19.789 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26_19:34:20.018 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-04-26_19:34:20.533 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-26_19:34:20.707 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-04-26_19:34:21.291 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-26_19:34:21.656 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-26_19:34:21.688 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-26_19:34:23.164 [restartedMain] INFO  o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar - Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2021-04-26_19:34:23.488 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-26_19:34:23.504 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-26_19:34:23.553 [task-2] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-26_19:34:25.474 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-04-26_19:34:25.761 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'application-1.input' has 1 subscriber(s).
+2021-04-26_19:34:25.806 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26_19:34:25.807 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 1 subscriber(s).
+2021-04-26_19:34:25.808 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2021-04-26_19:34:25.811 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: ktable
+2021-04-26_19:34:28.040 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-26_19:34:28.751 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-26_19:34:28.954 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: ktable
+2021-04-26_19:34:28.954 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: ktable
+2021-04-26_19:34:28.956 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kafka
+2021-04-26_19:34:32.418 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-26_19:34:32.420 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-26_19:34:32.423 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kafka
+2021-04-26_19:34:32.424 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+2021-04-26_19:34:32.424 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kstream
+2021-04-26_19:34:34.787 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-26_19:34:34.788 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-26_19:34:34.792 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kstream
+2021-04-26_19:34:34.792 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kstream
+2021-04-26_19:34:34.793 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: globalktable
+2021-04-26_19:34:37.307 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-26_19:34:37.307 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-26_19:34:37.311 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: globalktable
+2021-04-26_19:34:37.312 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: globalktable
+2021-04-26_19:34:37.312 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+2021-04-26_19:34:37.604 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:34:37.785 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:34:37.785 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:34:37.785 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619476477779
+2021-04-26_19:34:40.350 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:34:42.912 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:34:45.371 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:34:47.702 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:34:50.547 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:34:54.112 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:34:57.604 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:01.047 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:04.417 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:07.827 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476507795) timed out at 1619476507801 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:35:07.998 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:11.419 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:14.800 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:18.099 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:21.604 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:25.440 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:29.101 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:32.515 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:35.971 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:37.810 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476537801) timed out at 1619476537810 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:35:39.817 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:35:39.821 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476567810) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+2021-04-26_19:35:39.836 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:176)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:133)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:112)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wysoft.customer.CustomerServiceApplication.main(CustomerServiceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 33 common frames omitted
+2021-04-26_19:35:39.964 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-26_19:35:42.120 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2021-04-26_19:35:42.122 [restartedMain] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2021-04-26_19:35:42.224 [restartedMain] INFO  c.w.c.CustomerServiceApplication - Started CustomerServiceApplication in 111.902 seconds (JVM running for 114.665)
+2021-04-26_19:36:09.884 [task-scheduler-1] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:36:09.916 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:36:09.917 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:36:09.917 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619476569916
+2021-04-26_19:36:12.305 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:14.741 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:17.417 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:19.836 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:22.608 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:25.817 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:29.249 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:32.646 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:35.768 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:39.409 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:39.940 [kafka-admin-client-thread | adminclient-2] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-2] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476599928) timed out at 1619476599940 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment.
+2021-04-26_19:36:42.806 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:46.313 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:49.700 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:53.099 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:36:56.743 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:00.144 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:03.498 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:06.717 [kafka-admin-client-thread | adminclient-2] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-2] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:09.956 [kafka-admin-client-thread | adminclient-2] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-2] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476629940) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:37:09.966 [task-scheduler-1] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:37:39.992 [task-scheduler-2] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:37:40.033 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:37:40.034 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:37:40.034 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619476660032
+2021-04-26_19:37:42.373 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:44.816 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:47.266 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:49.989 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:52.671 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:56.038 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:37:59.145 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:02.608 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:06.061 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:09.820 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:10.117 [kafka-admin-client-thread | adminclient-3] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-3] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476690102) timed out at 1619476690115 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment.
+2021-04-26_19:38:13.140 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:16.168 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:19.280 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:22.362 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:25.278 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:28.515 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:31.420 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:34.656 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:37.742 [kafka-admin-client-thread | adminclient-3] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-3] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:38:40.119 [kafka-admin-client-thread | adminclient-3] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-3] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476720115) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:38:40.134 [task-scheduler-2] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:39:10.138 [task-scheduler-2] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:39:10.162 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:39:10.162 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:39:10.163 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619476750162
+2021-04-26_19:39:12.762 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:15.110 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:17.614 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:20.382 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:23.507 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:27.042 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:30.327 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:33.546 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:37.113 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:40.179 [kafka-admin-client-thread | adminclient-4] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-4] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476780167) timed out at 1619476780179 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:39:40.620 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:43.739 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:47.081 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:50.177 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:53.425 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:39:56.856 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:00.327 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:03.971 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:07.556 [kafka-admin-client-thread | adminclient-4] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-4] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:10.212 [kafka-admin-client-thread | adminclient-4] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-4] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476810179) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:40:10.270 [task-scheduler-2] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:40:40.284 [task-scheduler-1] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:40:40.305 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:40:40.306 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:40:40.306 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619476840304
+2021-04-26_19:40:42.360 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:44.521 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:46.654 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:48.925 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:51.499 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:54.398 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:40:57.647 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:00.775 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:04.705 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:08.382 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:10.325 [kafka-admin-client-thread | adminclient-5] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-5] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476870319) timed out at 1619476870324 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:41:11.733 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:15.011 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:18.315 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:21.563 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:25.110 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:28.557 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:31.846 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:35.383 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:38.809 [kafka-admin-client-thread | adminclient-5] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-5] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:41:40.341 [kafka-admin-client-thread | adminclient-5] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-5] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476900324) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:41:41.143 [task-scheduler-1] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:42:11.644 [task-scheduler-3] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:42:11.802 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:42:11.804 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:42:11.804 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619476931794
+2021-04-26_19:42:14.321 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:16.665 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:19.214 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:21.773 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:24.546 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:27.751 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:30.951 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:34.924 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:38.457 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:42.057 [kafka-admin-client-thread | adminclient-6] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-6] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476961910) timed out at 1619476961915 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:42:42.126 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:45.613 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:48.859 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:51.961 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:55.284 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:42:58.384 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:01.913 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:05.124 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:08.322 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:11.630 [kafka-admin-client-thread | adminclient-6] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-6] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:12.026 [kafka-admin-client-thread | adminclient-6] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-6] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619476991915) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+2021-04-26_19:43:12.105 [task-scheduler-3] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:43:42.360 [task-scheduler-2] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:43:42.578 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:43:42.580 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:43:42.581 [task-scheduler-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477022577
+2021-04-26_19:43:44.874 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:47.094 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:49.224 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:51.467 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:53.919 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:43:56.809 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:00.461 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:03.567 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:06.638 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:09.858 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:12.702 [kafka-admin-client-thread | adminclient-7] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-7] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477052698) timed out at 1619477052699 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:44:13.161 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:16.579 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:19.834 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:22.962 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:26.244 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:29.524 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:32.771 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:36.284 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:39.514 [kafka-admin-client-thread | adminclient-7] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-7] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:44:44.071 [kafka-admin-client-thread | adminclient-7] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-7] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477082699) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:44:44.991 [task-scheduler-2] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:45:16.511 [task-scheduler-4] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:45:17.842 [task-scheduler-4] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:45:17.844 [task-scheduler-4] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:45:17.845 [task-scheduler-4] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477117840
+2021-04-26_19:45:19.987 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:22.236 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:24.727 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:27.495 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:30.101 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:33.196 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:36.526 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:40.028 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:43.291 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:46.266 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:48.190 [kafka-admin-client-thread | adminclient-8] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-8] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477147895) timed out at 1619477147896 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:45:49.305 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:52.544 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:55.551 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:45:58.555 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:01.666 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:04.681 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:07.794 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:10.806 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:14.074 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:17.201 [kafka-admin-client-thread | adminclient-8] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-8] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:17.953 [kafka-admin-client-thread | adminclient-8] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-8] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477177896) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+2021-04-26_19:46:18.017 [task-scheduler-4] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:46:50.260 [task-scheduler-1] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:46:54.374 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:46:54.392 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:46:54.399 [task-scheduler-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477214305
+2021-04-26_19:46:56.769 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:46:58.893 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:01.036 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:03.546 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:06.122 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:09.217 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:12.333 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:15.559 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:18.799 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:22.130 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:24.651 [kafka-admin-client-thread | adminclient-9] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-9] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477244641) timed out at 1619477244647 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:47:25.286 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:28.297 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:31.411 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:34.648 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:37.667 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:40.585 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:43.480 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:46.554 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:50.192 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:53.639 [kafka-admin-client-thread | adminclient-9] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-9] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:47:54.705 [kafka-admin-client-thread | adminclient-9] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-9] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477274647) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+2021-04-26_19:47:54.782 [task-scheduler-1] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:48:24.958 [task-scheduler-5] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:48:25.454 [task-scheduler-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:48:25.472 [task-scheduler-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:48:25.473 [task-scheduler-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477305437
+2021-04-26_19:48:27.774 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:29.831 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:31.978 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:34.223 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:36.696 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:39.888 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:43.108 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:46.765 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:50.104 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:53.245 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:55.863 [kafka-admin-client-thread | adminclient-10] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-10] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477335547) timed out at 1619477335578 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call.
+2021-04-26_19:48:56.239 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:48:59.409 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:02.315 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:05.939 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:08.982 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:12.135 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:15.108 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:18.144 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:21.283 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:24.535 [kafka-admin-client-thread | adminclient-10] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-10] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-04-26_19:49:27.097 [kafka-admin-client-thread | adminclient-10] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-10] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477365578) timed out at 9223372036854775807 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+2021-04-26_19:49:27.233 [task-scheduler-5] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:49:57.383 [task-scheduler-6] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:49:57.603 [task-scheduler-6] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:49:57.606 [task-scheduler-6] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:49:57.607 [task-scheduler-6] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477397602
+2021-04-26_19:50:27.676 [kafka-admin-client-thread | adminclient-11] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-11] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Call(callName=fetchMetadata, deadlineMs=1619477427652) timed out at 1619477427661 after 1 attempt(s)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment.
+2021-04-26_19:50:38.811 [task-scheduler-6] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:332)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:217)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:183)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:79)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:402)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:90)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:201)
+	at org.springframework.cloud.sleuth.instrument.async.TraceRunnable.run(TraceRunnable.java:68)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:368)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:342)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:319)
+	... 15 common frames omitted
+2021-04-26_19:51:09.060 [task-scheduler-3] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-04-26_19:51:09.281 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:51:09.291 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:51:09.296 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477469281
+2021-04-26_19:51:12.017 [task-scheduler-3] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.a92f7c5d-9677-42bc-96db-664358e87c13
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-04-26_19:51:14.028 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:51:14.032 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:51:14.032 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477474028
+2021-04-26_19:51:14.773 [task-scheduler-3] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-1, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Cluster ID: daAJtmymRZ2YxjsKvvI2dQ
+2021-04-26_19:51:15.527 [task-scheduler-3] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.a92f7c5d-9677-42bc-96db-664358e87c13.errors' has 1 subscriber(s).
+2021-04-26_19:51:15.529 [task-scheduler-3] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.a92f7c5d-9677-42bc-96db-664358e87c13.errors' has 0 subscriber(s).
+2021-04-26_19:51:15.529 [task-scheduler-3] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.a92f7c5d-9677-42bc-96db-664358e87c13.errors' has 1 subscriber(s).
+2021-04-26_19:51:15.530 [task-scheduler-3] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'channel-stream.anonymous.a92f7c5d-9677-42bc-96db-664358e87c13.errors' has 2 subscriber(s).
+2021-04-26_19:51:15.598 [task-scheduler-3] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = anonymous.a92f7c5d-9677-42bc-96db-664358e87c13
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-04-26_19:51:15.638 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.0
+2021-04-26_19:51:15.641 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 66563e712b0b9f84
+2021-04-26_19:51:15.641 [task-scheduler-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1619477475638
+2021-04-26_19:51:15.659 [task-scheduler-3] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Subscribed to topic(s): channel-stream
+2021-04-26_19:51:15.668 [task-scheduler-3] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-04-26_19:51:15.683 [task-scheduler-3] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@47837b7f
+2021-04-26_19:51:15.768 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Cluster ID: daAJtmymRZ2YxjsKvvI2dQ
+2021-04-26_19:51:15.772 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-04-26_19:51:15.780 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] (Re-)joining group
+2021-04-26_19:51:15.815 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2021-04-26_19:51:15.815 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] (Re-)joining group
+2021-04-26_19:51:18.828 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Finished assignment for group at generation 1: {consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2-cc4d57be-1e0a-474e-8908-4badf7f0b70c=Assignment(partitions=[channel-stream-0])}
+2021-04-26_19:51:18.845 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Successfully joined group with generation 1
+2021-04-26_19:51:18.858 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Adding newly assigned partitions: channel-stream-0
+2021-04-26_19:51:18.870 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Found no committed offset for partition channel-stream-0
+2021-04-26_19:51:18.891 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Found no committed offset for partition channel-stream-0
+2021-04-26_19:51:18.921 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-anonymous.a92f7c5d-9677-42bc-96db-664358e87c13-2, groupId=anonymous.a92f7c5d-9677-42bc-96db-664358e87c13] Resetting offset for partition channel-stream-0 to offset 0.
+2021-04-26_19:51:18.939 [KafkaConsumerDestination{consumerDestinationName='channel-stream', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$1 - anonymous.a92f7c5d-9677-42bc-96db-664358e87c13: partitions assigned: [channel-stream-0]
+2021-04-26_20:10:23.728 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26_20:10:23.742 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-26_20:10:24.071 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 326 ms
+2021-04-26_20:10:24.404 [http-nio-8082-exec-2] INFO  c.w.c.m.r.s.impl.CustomerServiceImpl - Fetching Customer details for CustomerId: 10003
