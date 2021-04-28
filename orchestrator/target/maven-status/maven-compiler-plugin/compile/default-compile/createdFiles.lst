@@ -1,7 +1,0 @@
-com\wysoft\orchestrator\CustomerOrderApplication.class
-com\wysoft\orchestrator\mw\service\CustomerOrderService.class
-wysoft\sohan\orchestrator\mw\service\impl\CustomerOrderServiceImpl.class
-com\wysoft\orchestrator\mw\model\CustomerOrderDTO.class
-com\wysoft\orchestrator\mw\controller\CustomerOrderController.class
-com\wysoft\orchestrator\mw\model\CustomerDTO.class
-com\wysoft\order\service\model\OrderDTO.class
